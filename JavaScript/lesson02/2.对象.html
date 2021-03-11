@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script>
+        "use strict"
+        var person = {
+            name: "cwlin",
+            age: 2,
+            email: "123456789@qq.com",
+            score: 100
+        }
+        person.age = 3;
+
+        console.log(person.haha); //undefined
+
+        delete person.score; //true
+
+        person.haha = "haha";
+
+        console.log("age" in person); //true
+        console.log("toString" in person); //true
+
+        person.hasOwnProperty("age"); //true
+        person.hasOwnProperty("toString") //false
+    </script>
+</head>
+<body>
+
+</body>
+</html>

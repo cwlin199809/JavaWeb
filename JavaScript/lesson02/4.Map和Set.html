@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script>
+        var map = new Map([["tom",100],["jack",90],["rose",80]]);
+        var name = map.get("tom");
+        console.log(name);
+        map.set("admin",123456);
+        console.log(map);
+        map.delete("jack");
+        console.log(map);
+
+        var set = new Set([3,1,2,2,1]);
+        console.log(set);
+        set.add(5);
+        console.log(set);
+        set.delete(2);
+        console.log(set);
+        console.log(set.has(3));
+
+        for(let x of map){
+            console.log(x);
+        }
+        for(let x of set){
+            console.log(x);
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

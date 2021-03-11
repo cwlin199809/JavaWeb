@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        .demo a{
+            float: left;
+            display: block;
+            height: 50px;
+            width: 50px;
+            border-radius: 10px;
+            background: cyan; /*背景颜色*/
+            color: grey; /*文字颜色*/
+            text-align: center; /*文字居中*/
+            text-decoration: none; /*去掉下划线*/
+            line-height: 50px; /*设置行高50px*/
+            font: bold 20px Arial; /*设置字体格式  bold: 加粗, 20px/50px: 字号/行高, Arial: 字体*/
+            margin-right: 5px; /*每个元素向右偏移5px*/
+        }
+
+        /*格式: 标签名[属性名=属性值(正则)]{}
+            = 绝对等于
+            *= 包含  ~=包含,且空格分隔
+            ^= 以...开头
+            $= 以...结尾
+         */
+        /*存在id属性的元素: a[id]{}*/
+        a[id]{
+            background: green;
+        }
+        /*选择id为first的元素: a[id=xx]{}*/
+        a[id=first]{
+            background: blue;
+        }
+        /*选择class中含有links的元素*/
+        a[class*="links"]{
+            background: yellow;
+        }
+        /*选择href中以http开头的元素*/
+        a[href^=http]{
+            background: pink;
+        }
+        /*选择href中以pdf结尾的元素*/
+        a[href$=pdf]{
+            background: red;
+        }
+    </style>
+</head>
+<body>
+
+<p class="demo">
+    <a href="https://www.baidu.com" class="links item first" id="first">1</a>
+    <a href="https://blog.csdn.net/coder_lcw/article/details/114372606" class="links item active" target="_blank" title="test">2</a>
+    <a href="images/123.html" class="links item">3</a>
+    <a href="images/123.png" class="links item">4</a>
+    <a href="images/123.jpg" class="links item">5</a>
+    <a href="abc" class="links item">6</a>
+    <a href="/a.pdf" class="links item">7</a>
+    <a href="/abc.pdf" class="links item">8</a>
+    <a href="abc.doc" class="links item">9</a>
+    <a href="abcd.doc" class="links item last" id="last">10</a>
+</p>
+</body>
+</html>

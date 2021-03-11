@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        body{
+            padding: 20px;
+        }
+        div{
+            margin: 10px;
+            padding: 5px;
+            font-size: 12px;
+            line-height: 25px;
+        }
+        #father{
+            border: 2px solid #666666;
+            padding: 0;
+            position: relative; /*使得绝对定位的标签基于父级元素*/
+        }
+        /*相对定位: 相对于自己原来的位置进行偏移*/
+        #first{
+            background-color: skyblue;
+            border: 2px dashed blue;
+        }
+        #second{
+            background-color: lightgreen;
+            border: 2px dashed green;
+            position: absolute;
+            right: 30px;
+            top: 50px;
+        }
+        #third{
+            background-color: mediumpurple;
+            border: 2px dashed purple;
+        }
+    </style>
+</head>
+<body>
+
+<div id="father">
+    <div id="first">第一个盒子</div>
+    <div id="second">第二个盒子</div>
+    <div id="third">第三个盒子</div>
+</div>
+</body>
+</html>

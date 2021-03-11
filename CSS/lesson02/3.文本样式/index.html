@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        h1{
+            color: rgba(0,255,255,0.75); /*最后一个参数为透明度: 0~1*/
+            text-align: center; /*排版: 居中*/
+        }
+        .p1{
+            text-indent: 2em; /*首行缩进: 两个字符*/
+        }
+        .p3{
+            background: purple; /*背景颜色*/
+            height: 100px; /*块的高度*/
+            line-height: 50px; /*调节行高以实现文本的上下居中*/
+        }
+
+        .l1{
+            text-decoration: underline; /*下划线*/
+        }
+        .l2{
+            text-decoration: line-through; /*中划线*/
+        }
+        .l3{
+            text-decoration: overline; /*上划线*/
+        }
+        a{
+            text-decoration: none; /*去掉下划线*/
+        }
+
+        img,span{
+            vertical-align: middle; /*去掉<a>标签自带的默认下划线*/
+        }
+    </style>
+</head>
+<body>
+
+<a href="">123</a>
+
+<p class="l1">123321</p>
+<p class="l2">123321</p>
+<p class="l3">123321</p>
+
+<h1>内容简介</h1>
+<p class="p1">
+    故事背景取自秦灭六国到西楚霸王项羽灭秦这段英雄辈出的历史时期，时间跨度约30年，是一部以武侠为主题的全民型动画。各种历史事件和民间传说纷呈迭起，仗剑游走江湖的名士侠隐和对现代中国产生深远影响的诸子百家更是在这个合纵连横的大时代中悉数登场。
+</p>
+<p id="test">
+    百家争鸣的中华古文化在此激烈冲突碰撞，大时代恢宏磅礴的战争场面在连天烽火中震撼重现，江湖儿女的侠骨柔情于动荡乱世间绽放光华……少年天明如杂草般顽强生存于时代变革的乱世之中，面对强暴的政权、险恶的敌人，勇敢地与侠士们进行反抗，经历了一段不俗的遭遇。
+</p>
+<p class="p3">
+    The chess-board is the world: the pieces are the phenomena of the universe; the rules of the game are what we call the laws of nature. The player on the other side is hidden from us. We know that his play is always fair, just and patient. But also we know, to our cost, that he never overlooks a mistake, or makes the smallest allowance for ignorance.
+</p>
+
+<p>
+    <span>这是我的qq头像：</span>
+    <img src="images/a.png" alt="">
+</p>
+
+</body>
+</html>

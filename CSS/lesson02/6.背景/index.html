@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            width: 1000px;
+            height: 700px;
+            border: 2px solid red; /*粗细 样式(实线) 颜色*/
+            background-image: url("images/tx.png"); /*默认是全部平铺repeat*/
+        }
+        .div1{
+            background-repeat: repeat-x; /*水平平铺*/
+        }
+        .div2{
+            background-repeat: repeat-y; /*垂直平铺*/
+        }
+        .div3{
+            background-repeat: no-repeat; /*不平铺*/
+        }
+    </style>
+</head>
+<body>
+
+<div class="div0"></div>
+<div class="div1"></div>
+<div class="div2"></div>
+<div class="div3"></div>
+
+</body>
+</html>

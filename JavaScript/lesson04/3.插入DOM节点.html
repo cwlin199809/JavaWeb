@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<p id="js">JavaScript</p>
+<div id="list">
+    <p id="se">JavaSE</p>
+    <p id="ee">JavaEE</p>
+    <p id="me">JavaME</p>
+</div>
+
+<script>
+    var js = document.getElementById("js"),
+        list = document.getElementById("list");
+    //追加一个节点
+    list.appendChild(js) //<p id="js">JavaScript</p>
+    //创建一个新的节点
+    var newP = document.createElement("p"); //创建一个p标签
+    newP.id = "newP"; //等价于newP.setAttribute("id","newP");
+    newP.innerText = "hello,cwlin";
+    list.appendChild(newP);
+
+    //创建一个script标签节点，通过setAttribute属性可以设置任意的值
+    var myScript = document.createElement("script");
+    myScript.setAttribute("type","text/javascript"); //通用写法
+    list.appendChild(myScript);
+    //可以创建一个style标签
+    var myStyle = document.createElement("style"); //创建一个空的style标签
+    myStyle.setAttribute("type","text/css"); //通用写法
+    myStyle.innerHTML = 'body{background-color: yellow;}'; //设置标签内容
+    var head = document.getElementsByTagName("head")[0]; //注意返回值，加上索引[0]
+    head.appendChild(myStyle);
+    //插入某个元素前面：.insertBefore(newNode,targetNode)
+    var ee = document.getElementById("ee");
+    list.insertBefore(js,ee);
+</script>
+
+</body>
+</html>

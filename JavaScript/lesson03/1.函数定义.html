@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    function abs(x){
+        console.log("x -> "+x);
+        for (var i = 0; i < arguments.length; i++){
+            console.log(arguments[i]);
+        }
+        //手动抛出异常
+        if (typeof x!=="number"){
+            throw "Not a Number!"
+        }
+        return x>=0 ? x : -x;
+    }
+</script>
+
+</body>
+</html>

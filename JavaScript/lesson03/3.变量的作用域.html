@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    function f(){
+        var x = 1;
+        x = x + 1;
+    }
+    x = x + 2; //Uncaught ReferenceError: x is not defined
+
+    function f2(){
+        var x = '1';
+        x = x + 1;
+    }
+
+    function f3(){
+        var x = 1;
+        function f4(){
+            var y = x + 1; //2
+        }
+        var z = y + 1; //报错
+    }
+
+    function f5(){
+        var x = 1;
+        function f6(){
+            var x = 'A';
+            console.log('inner'+x); //innerA
+        }
+        console.log('outer'+x); //outer1
+        f6();
+    }
+    f5()
+
+    function f7(){
+        var x = 'x' + y;
+        console.log(x);
+        var y = 'y';
+    }
+    function f8(){
+        var y;
+        var x = 'x' + y;
+        console.log(x);
+        y = 'y';
+    }
+    f7();f8();
+
+    function f9(){
+        var x = 1,
+            y = x + 1,
+            z,i,a; //undefined
+    }
+
+
+    x = 1; //全局变量
+    function f10(){
+        console.log(x);
+    }
+    f10();
+    console.log(x);
+
+    var x = 'xxx';
+    alert(x);
+    alert(window.x);
+
+    window.alert(x);
+    window.alert(window.x);
+    var old_alert = window.alert;
+    window.alert = function (){}
+    window.alert(123); //函数失效了
+    window.alert = old_alert;
+    window.alert(456); //恢复
+
+    //唯一全局变量
+    var CwlinApp = {}
+    //定义全局变量
+    CwlinApp.name = 'cwlin';
+    CwlinApp.add = function (a,b){
+        return a + b;
+    }
+
+    function f11(){
+        for (var i = 0; i < 100; i++)
+            console.log(i);
+        console.log(i+1); //变量i出了作用域还可以使用
+    }
+    function f12(){
+        for (let i = 0; i < 100; i++)
+            console.log(i);
+        console.log(i+1); //报错
+    }
+
+    var PI = '3.14'; //可以修改
+    const PI = '3.14'; //不可修改
+
+</script>
+
+</body>
+</html>

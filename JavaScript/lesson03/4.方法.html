@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    function getAge(){
+        var now = new Date().getFullYear();
+        return now - this.birth;
+    }
+    var Cwlin = {
+        name: 'cwlin',
+        birth: 2020,
+        age: getAge
+    }
+    getAge.apply(Cwlin,[]) //this指向了Cwlin，参数为空
+</script>
+
+</body>
+</html>

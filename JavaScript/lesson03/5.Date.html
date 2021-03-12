@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    var now = new Date(); //Fri Mar 12 2021 11:19:02 GMT+0800 (中国标准时间)
+    now.getFullYear(); //年
+    now.getMonth(); //月: 0~11
+    now.getDate(); //日
+    now.getDay(); //星期几
+    now.getHours(); //时
+    now.getMinutes(); //分
+    now.getSeconds(); //秒
+    now.getTime(); //时间戳，全世界统一 从1970.1.1 00:00:00到现在的毫秒数
+
+    now = new Date(1615519401237); //时间戳转为时间
+    now.toLocaleString();
+    now.toGMTString();
+</script>
+
+</body>
+</html>

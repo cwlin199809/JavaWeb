@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    var Student = {
+        name: "cwlin",
+        age: 3,
+        run: function () {
+            console.log(this.name + "run...")
+        }
+    };
+    var Bird = {
+        fly: function () {
+            console.log(this.name + "fly...")
+        }
+    };
+
+    var xiaoming = {
+        name: "xiaoming"
+    }
+
+    //小明的原型是Student
+    xiaoming.__proto__ = Student;
+    //小明的原型变为Bird
+    xiaoming.__proto__ = Bird;
+
+    function Student1(name) {
+        this.name = name;
+    }
+    //给Student1新增一个方法
+    Student1.prototype.hello = function () {
+        alert("hello")
+    }
+
+</script>
+
+</body>
+</html>

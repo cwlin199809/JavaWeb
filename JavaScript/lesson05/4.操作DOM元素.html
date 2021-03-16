@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.js"></script>
+</head>
+<body>
+
+<div>
+    <ul id="test-ul">
+        <li class="js">JavaScript</li>
+        <li id="py">python</li>
+    </ul>
+</div>
+
+<script>
+    $('#test-ul li[id=py]').text(); //获得值
+    $('#test-ul li[id=py]').text("Python"); //设置值
+    // $('#test-ul').html(); //获得值
+    // $('#test-ul').html('<strong>123</strong>'); //设置值
+
+    $('#test-ul li[id=py]').css("color", "red");
+
+    $('#test-ul li[id=py]').show();
+    $('#test-ul li[id=py]').hide(); //本质就是 display: none;
+    $('#test-ul li[id=py]').toggle(); //切换
+</script>
+
+</body>
+</html>

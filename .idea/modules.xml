@@ -6,7 +6,9 @@
       <module fileurl="file://$PROJECT_DIR$/HTML/HTML.iml" filepath="$PROJECT_DIR$/HTML/HTML.iml" />
       <module fileurl="file://$PROJECT_DIR$/JDBC/JDBC.iml" filepath="$PROJECT_DIR$/JDBC/JDBC.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaScript/JavaScript.iml" filepath="$PROJECT_DIR$/JavaScript/JavaScript.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Maven/Maven.iml" filepath="$PROJECT_DIR$/Maven/Maven.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Maven-cwlin/Maven-cwlin.iml" filepath="$PROJECT_DIR$/Maven-cwlin/Maven-cwlin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MyBatis-cwlin/MyBatis-01/MyBatis-01.iml" filepath="$PROJECT_DIR$/MyBatis-cwlin/MyBatis-01/MyBatis-01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MyBatis-cwlin/MyBatis-cwlin.iml" filepath="$PROJECT_DIR$/MyBatis-cwlin/MyBatis-cwlin.iml" />
     </modules>
   </component>
 </project>

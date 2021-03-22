@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="Maven-cwlin:war">
+    <output-path>$PROJECT_DIR$/Maven-cwlin/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>Maven-cwlin</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="Maven-cwlin.war">
+      <element id="artifact" artifact-name="Maven-cwlin:war exploded" />
+    </root>
+  </artifact>
+</component>

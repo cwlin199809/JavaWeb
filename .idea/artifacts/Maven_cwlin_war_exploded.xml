@@ -1,23 +1,23 @@
 <component name="ArtifactManager">
-  <artifact type="exploded-war" name="Maven:war exploded">
-    <output-path>$PROJECT_DIR$/Maven/target/Maven</output-path>
+  <artifact type="exploded-war" name="Maven-cwlin:war exploded">
+    <output-path>$PROJECT_DIR$/Maven-cwlin/target/Maven-cwlin</output-path>
     <properties id="maven-jee-properties">
       <options>
         <exploded>true</exploded>
-        <module>Maven</module>
+        <module>Maven-cwlin</module>
         <packaging>war</packaging>
       </options>
     </properties>
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
-          <element id="module-output" name="Maven" />
+          <element id="module-output" name="Maven-cwlin" />
         </element>
       </element>
       <element id="directory" name="META-INF">
-        <element id="file-copy" path="$PROJECT_DIR$/Maven/target/Maven/META-INF/MANIFEST.MF" />
+        <element id="file-copy" path="$PROJECT_DIR$/Maven-cwlin/target/Maven-cwlin/META-INF/MANIFEST.MF" />
       </element>
-      <element id="javaee-facet-resources" facet="Maven/web/Web" />
+      <element id="javaee-facet-resources" facet="Maven-cwlin/web/Web" />
     </root>
   </artifact>
 </component>

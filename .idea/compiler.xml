@@ -8,11 +8,19 @@
         <outputRelativeToContentRoot value="true" />
         <module name="Maven-cwlin" />
         <module name="MyBatis-01" />
+        <module name="MyBatis-02" />
+        <module name="MyBatis-03" />
+        <module name="MyBatis-04" />
+        <module name="MyBatis-05" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="Maven-cwlin" target="1.7" />
       <module name="MyBatis-01" target="15" />
+      <module name="MyBatis-02" target="15" />
+      <module name="MyBatis-03" target="15" />
+      <module name="MyBatis-04" target="15" />
+      <module name="MyBatis-05" target="15" />
       <module name="MyBatis-cwlin" target="15" />
       <module name="Mybatis-cwlin" target="15" />
     </bytecodeTargetLevel>

@@ -1,6 +1,8 @@
 笔记本
 mysqldump -uroot -p123456 -B mybatis > E:/硕士研究/Java学习历程/JavaWeb/MyBatis-cwlin/dbFiles/mybatis.sql
-mysql -uroot -p123456 mybatis < E:/硕士研究/Java学习历程/JavaWeb/MyBatis-cwlin/dbFiles/mybatis.sql
+mysql -uroot -p123456
+source E:/硕士研究/Java学习历程/JavaWeb/MyBatis-cwlin/dbFiles/mybatis.sql
 台式机
 mysqldump -uroot -p123456 -B mybatis > E:/Java学习历程/JavaWeb/MyBatis-cwlin/dbFiles/mybatis.sql
-mysql -uroot -p123456 mybatis < E:/Java学习历程/JavaWeb/MyBatis-cwlin/dbFiles/mybatis.sql
+mysql -uroot -p123456
+source E:/Java学习历程/JavaWeb/MyBatis-cwlin/dbFiles/mybatis.sql

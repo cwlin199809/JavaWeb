@@ -2,6 +2,7 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
@@ -15,6 +16,7 @@
         <module name="MyBatis-07" />
         <module name="Maven-cwlin" />
         <module name="MyBatis-08" />
+        <module name="MyBatis-09" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -27,6 +29,7 @@
       <module name="MyBatis-06" target="15" />
       <module name="MyBatis-07" target="15" />
       <module name="MyBatis-08" target="15" />
+      <module name="MyBatis-09" target="15" />
       <module name="MyBatis-cwlin" target="15" />
       <module name="Mybatis-cwlin" target="15" />
     </bytecodeTargetLevel>

@@ -4,16 +4,17 @@
     "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <!--configuration核心配置文件-->
 <configuration>
-    <!--引用外部配置文件，注意标签顺序-->
-    <properties resource="db.properties">
-        <property name="username" value="root"/>
-        <property name="password" value="111111"/>
-    </properties>
+    <!--引用外部配置文件-->
+    <properties resource="db.properties"/>
 
-    <!--可以给实体类取别名，以下给出两种方式-->
-    <!--<typeAliases>
-        <typeAlias type="com.cwlin.pojo.User" alias="User"/>
-    </typeAliases>-->
+    <settings>
+        <!--标准的日志工厂实现-->
+        <setting name="logImpl" value="STDOUT_LOGGING"/>
+        <!--开启驼峰命名规则自动映射-->
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
+    </settings>
+
+    <!--可以给实体类取别名-->
     <typeAliases>
         <package name="com.cwlin.pojo"/>
     </typeAliases>
@@ -39,10 +40,10 @@
             </dataSource>
         </environment>
     </environments>
-    <!--每一个Mapper.xml都需要在MyBatis核心配置文件中注册！-->
+
+    <!--绑定接口-->
     <mappers>
-        <mapper resource="com/cwlin/dao/UserMapper.xml"/>
-        <!--<mapper class="com.cwlin.dao.UserMapper"/>-->
-        <!--<package name="com.cwlin.dao"/>-->
+        <mapper class="com.cwlin.dao.BlogMapper"/>
     </mappers>
+
 </configuration>

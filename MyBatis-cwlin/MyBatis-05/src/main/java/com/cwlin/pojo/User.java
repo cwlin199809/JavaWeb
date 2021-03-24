@@ -1,50 +1,15 @@
 package com.cwlin.pojo;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 //实体类
+@Data //无参构造、get、set、toString、hashCode、equals
+@AllArgsConstructor //有参构造
+@NoArgsConstructor //无参构造
 public class User {
     private int id;
     private String name;
     private String pwd;
-
-    public User() {
-    }
-
-    public User(int id, String name, String password) {
-        this.id = id;
-        this.name = name;
-        this.pwd = password;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getPwd() {
-        return pwd;
-    }
-
-    public void setPwd(String pwd) {
-        this.pwd = pwd;
-    }
-
-    @Override
-    public String toString() {
-        return "User{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", pwd='" + pwd + '\'' +
-                '}';
-    }
 }

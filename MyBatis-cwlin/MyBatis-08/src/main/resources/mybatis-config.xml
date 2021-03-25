@@ -43,7 +43,7 @@
 
     <!--绑定接口-->
     <mappers>
-        <mapper class="com.cwlin.dao.UserMapper"/>
+        <mapper class="com.cwlin.dao.BlogMapper"/>
     </mappers>
 
 </configuration>

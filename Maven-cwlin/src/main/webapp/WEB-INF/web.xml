@@ -4,4 +4,18 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+
+  <!--web.xml是webapp的核心配置文件-->
+  <!--注册Servlet-->
+  <servlet>
+    <servlet-name>helloServlet</servlet-name>
+    <servlet-class>com.cwlin.servlet.HelloServlet</servlet-class>
+  </servlet>
+
+  <!--一个Servlet对应一个Mapping映射-->
+  <servlet-mapping>
+    <servlet-name>helloServlet</servlet-name>
+    <!--请求路径-->
+    <url-pattern>/cwlin1998</url-pattern>
+  </servlet-mapping>
 </web-app>

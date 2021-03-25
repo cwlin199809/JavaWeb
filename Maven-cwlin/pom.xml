@@ -1,33 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<!--Maven版本和头文件-->
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
+  <!--这里就是我们刚才配置的GAV-->
   <groupId>com.cwlin</groupId>
   <artifactId>Maven-cwlin</artifactId>
   <version>1.0-SNAPSHOT</version>
+  <!--Package：项目的打包方式
+        jar：java应用
+        war：JavaWeb应用
+  -->
   <packaging>war</packaging>
 
   <name>Maven-cwlin Maven Webapp</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
 
+  <!--配置-->
   <properties>
+    <!--项目的默认构建编码-->
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <!--编码版本-->
     <maven.compiler.source>1.7</maven.compiler.source>
     <maven.compiler.target>1.7</maven.compiler.target>
   </properties>
 
+  <!--项目依赖-->
   <dependencies>
+    <!--具体依赖的jar包配置文件-->
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>4.11</version>
       <scope>test</scope>
     </dependency>
+    <!--Maven的高级之处在于，它会自动导入这个jar包所依赖的其他jar包-->
+    <!-- https://mvnrepository.com/artifact/org.springframework/spring-webmvc -->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-webmvc</artifactId>
+      <version>5.3.5</version>
+    </dependency>
+    <!--jsp的依赖-->
+    <dependency>
+      <groupId>jakarta.servlet.jsp</groupId>
+      <artifactId>jakarta.servlet.jsp-api</artifactId>
+      <version>3.0.0</version>
+      <scope>provided</scope>
+    </dependency>
+
+    <!--jar包的依赖-->
+    <dependency>
+      <groupId>jakarta.servlet</groupId>
+      <artifactId>jakarta.servlet-api</artifactId>
+      <version>5.0.0</version>
+      <scope>provided</scope>
+    </dependency>
   </dependencies>
 
+  <!--项目构建用的东西-->
   <build>
     <finalName>Maven-cwlin</finalName>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->

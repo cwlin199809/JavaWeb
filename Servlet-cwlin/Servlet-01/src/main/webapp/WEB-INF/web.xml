@@ -10,10 +10,50 @@
     <servlet-name>hello</servlet-name>
     <servlet-class>com.cwlin.servlet.HelloServlet</servlet-class>
   </servlet>
+  <!--404-->
+  <servlet>
+    <servlet-name>error</servlet-name>
+    <servlet-class>com.cwlin.servlet.ErrorServlet</servlet-class>
+  </servlet>
+
   <!--Servlet的请求路径-->
   <servlet-mapping>
     <servlet-name>hello</servlet-name>
     <url-pattern>/hello</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>hello</servlet-name>
+    <url-pattern>/hello2</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>hello</servlet-name>
+    <url-pattern>/hello3</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>hello</servlet-name>
+    <url-pattern>/hello4</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>hello</servlet-name>
+    <url-pattern>/hello5</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>hello</servlet-name>
+    <url-pattern>/hello/*</url-pattern>
+  </servlet-mapping>
+  <!--可以自定义后缀实现请求映射
+      注意点，*前面不能加项目映射的路径
+      hello/hhh.cwlin（可以访问）
+  -->
+  <servlet-mapping>
+    <servlet-name>hello</servlet-name>
+    <url-pattern>*.cwlin</url-pattern>
+  </servlet-mapping>
+
+  <!--404的请求路径-->
+  <servlet-mapping>
+    <servlet-name>error</servlet-name>
+    <url-pattern>/*</url-pattern>
   </servlet-mapping>
 
 </web-app>

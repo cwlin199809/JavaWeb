@@ -2,6 +2,7 @@
 <project version="4">
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/Maven-cwlin" />
+    <file type="web" url="file://$PROJECT_DIR$/Servlet-cwlin/Servlet-01" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
@@ -9,6 +10,7 @@
         <option value="$PROJECT_DIR$/Maven/pom.xml" />
         <option value="$PROJECT_DIR$/MyBatis-cwlin/pom.xml" />
         <option value="$PROJECT_DIR$/Maven-cwlin/pom.xml" />
+        <option value="$PROJECT_DIR$/Servlet-cwlin/pom.xml" />
       </list>
     </option>
   </component>

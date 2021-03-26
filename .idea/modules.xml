@@ -17,6 +17,8 @@
       <module fileurl="file://$PROJECT_DIR$/MyBatis-cwlin/MyBatis-08/MyBatis-08.iml" filepath="$PROJECT_DIR$/MyBatis-cwlin/MyBatis-08/MyBatis-08.iml" />
       <module fileurl="file://$PROJECT_DIR$/MyBatis-cwlin/MyBatis-09/MyBatis-09.iml" filepath="$PROJECT_DIR$/MyBatis-cwlin/MyBatis-09/MyBatis-09.iml" />
       <module fileurl="file://$PROJECT_DIR$/MyBatis-cwlin/MyBatis-cwlin.iml" filepath="$PROJECT_DIR$/MyBatis-cwlin/MyBatis-cwlin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Servlet-cwlin/Servlet-01/Servlet-01.iml" filepath="$PROJECT_DIR$/Servlet-cwlin/Servlet-01/Servlet-01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Servlet-cwlin/Servlet-cwlin.iml" filepath="$PROJECT_DIR$/Servlet-cwlin/Servlet-cwlin.iml" />
     </modules>
   </component>
 </project>

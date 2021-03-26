@@ -17,6 +17,7 @@
         <module name="Maven-cwlin" />
         <module name="MyBatis-08" />
         <module name="MyBatis-09" />
+        <module name="Servlet-01" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -32,6 +33,8 @@
       <module name="MyBatis-09" target="15" />
       <module name="MyBatis-cwlin" target="15" />
       <module name="Mybatis-cwlin" target="15" />
+      <module name="Servlet-01" target="1.7" />
+      <module name="Servlet-cwlin" target="15" />
     </bytecodeTargetLevel>
   </component>
 </project>

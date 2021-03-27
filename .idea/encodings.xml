@@ -4,7 +4,14 @@
     <file url="file://$PROJECT_DIR$/Maven-cwlin/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Maven-cwlin/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Servlet-cwlin/Servlet-01/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Servlet-cwlin/Servlet-01/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Servlet-cwlin/Servlet-02/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Servlet-cwlin/Servlet-02/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Servlet-cwlin/request/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Servlet-cwlin/request/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Servlet-cwlin/response/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Servlet-cwlin/response/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Session_Cookie-cwlin/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Session_Cookie-cwlin/src/main/resources" charset="UTF-8" />
   </component>
 </project>

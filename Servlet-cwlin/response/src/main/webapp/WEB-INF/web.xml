@@ -13,6 +13,14 @@
     <servlet-name>image</servlet-name>
     <servlet-class>com.cwlin.servlet.ImageServlet</servlet-class>
   </servlet>
+  <servlet>
+    <servlet-name>redirect</servlet-name>
+    <servlet-class>com.cwlin.servlet.RedirectServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>request</servlet-name>
+    <servlet-class>com.cwlin.servlet.RequestTest</servlet-class>
+  </servlet>
 
   <servlet-mapping>
     <servlet-name>filedown</servlet-name>
@@ -21,5 +29,13 @@
   <servlet-mapping>
     <servlet-name>image</servlet-name>
     <url-pattern>/image</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>redirect</servlet-name>
+    <url-pattern>/redirect</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>request</servlet-name>
+    <url-pattern>/login</url-pattern>
   </servlet-mapping>
 </web-app>

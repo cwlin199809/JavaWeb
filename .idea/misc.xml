@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/../Cookie_Session-cwlin" />
     <file type="web" url="file://$PROJECT_DIR$/Maven-cwlin" />
+    <file type="web" url="file://$PROJECT_DIR$/Servlet-cwlin/request" />
     <file type="web" url="file://$PROJECT_DIR$/Servlet-cwlin/response" />
     <file type="web" url="file://$PROJECT_DIR$/Servlet-cwlin/Servlet-01" />
     <file type="web" url="file://$PROJECT_DIR$/Servlet-cwlin/Servlet-02" />
+    <file type="web" url="file://$PROJECT_DIR$/Session_Cookie-cwlin" />
+    <file type="web" url="file://$PROJECT_DIR$/../Session_Cookie-cwlin" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
@@ -13,6 +17,7 @@
         <option value="$PROJECT_DIR$/MyBatis-cwlin/pom.xml" />
         <option value="$PROJECT_DIR$/Maven-cwlin/pom.xml" />
         <option value="$PROJECT_DIR$/Servlet-cwlin/pom.xml" />
+        <option value="$PROJECT_DIR$/Session_Cookie-cwlin/pom.xml" />
       </list>
     </option>
   </component>

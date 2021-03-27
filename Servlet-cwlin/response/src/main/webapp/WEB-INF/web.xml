@@ -1,0 +1,25 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+
+  <servlet>
+    <servlet-name>filedown</servlet-name>
+    <servlet-class>com.cwlin.servlet.FileServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>image</servlet-name>
+    <servlet-class>com.cwlin.servlet.ImageServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>filedown</servlet-name>
+    <url-pattern>/filedown</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>image</servlet-name>
+    <url-pattern>/image</url-pattern>
+  </servlet-mapping>
+</web-app>

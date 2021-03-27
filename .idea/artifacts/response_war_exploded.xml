@@ -1,0 +1,27 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="response:war exploded">
+    <output-path>$PROJECT_DIR$/Servlet-cwlin/response/target/response</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <exploded>true</exploded>
+        <module>response</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="response" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: jakarta.servlet.jsp:jakarta.servlet.jsp-api:3.0.0" />
+          <element id="library" level="project" name="Maven: jakarta.servlet:jakarta.servlet-api:5.0.0" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/Servlet-cwlin/response/target/response/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="response/web/Web" />
+    </root>
+  </artifact>
+</component>

@@ -20,6 +20,7 @@
       <module fileurl="file://$PROJECT_DIR$/Servlet-cwlin/Servlet-01/Servlet-01.iml" filepath="$PROJECT_DIR$/Servlet-cwlin/Servlet-01/Servlet-01.iml" />
       <module fileurl="file://$PROJECT_DIR$/Servlet-cwlin/Servlet-02/Servlet-02.iml" filepath="$PROJECT_DIR$/Servlet-cwlin/Servlet-02/Servlet-02.iml" />
       <module fileurl="file://$PROJECT_DIR$/Servlet-cwlin/Servlet-cwlin.iml" filepath="$PROJECT_DIR$/Servlet-cwlin/Servlet-cwlin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Servlet-cwlin/response/response.iml" filepath="$PROJECT_DIR$/Servlet-cwlin/response/response.iml" />
     </modules>
   </component>
 </project>

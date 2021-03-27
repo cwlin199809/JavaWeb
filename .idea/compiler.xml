@@ -7,18 +7,19 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="MyBatis-01" />
-        <module name="MyBatis-02" />
-        <module name="MyBatis-03" />
-        <module name="MyBatis-04" />
-        <module name="MyBatis-05" />
         <module name="MyBatis-06" />
         <module name="MyBatis-07" />
-        <module name="Maven-cwlin" />
         <module name="MyBatis-08" />
         <module name="MyBatis-09" />
         <module name="Servlet-01" />
         <module name="Servlet-02" />
+        <module name="MyBatis-01" />
+        <module name="MyBatis-02" />
+        <module name="MyBatis-03" />
+        <module name="MyBatis-04" />
+        <module name="response" />
+        <module name="MyBatis-05" />
+        <module name="Maven-cwlin" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -34,6 +35,7 @@
       <module name="MyBatis-09" target="15" />
       <module name="MyBatis-cwlin" target="15" />
       <module name="Mybatis-cwlin" target="15" />
+      <module name="response" target="1.7" />
       <module name="Servlet-01" target="1.7" />
       <module name="Servlet-02" target="1.7" />
       <module name="Servlet-cwlin" target="15" />

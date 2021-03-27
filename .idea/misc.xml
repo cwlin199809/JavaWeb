@@ -2,6 +2,7 @@
 <project version="4">
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/Maven-cwlin" />
+    <file type="web" url="file://$PROJECT_DIR$/Servlet-cwlin/response" />
     <file type="web" url="file://$PROJECT_DIR$/Servlet-cwlin/Servlet-01" />
     <file type="web" url="file://$PROJECT_DIR$/Servlet-cwlin/Servlet-02" />
   </component>

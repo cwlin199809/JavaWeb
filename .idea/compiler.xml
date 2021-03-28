@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="request" />
+        <module name="JSP-cwlin" />
         <module name="MyBatis-06" />
         <module name="MyBatis-07" />
         <module name="MyBatis-08" />
@@ -26,6 +27,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="Cookie_Session-cwlin" target="1.5" />
+      <module name="JSP-cwlin" target="15" />
       <module name="Maven-cwlin" target="1.7" />
       <module name="MyBatis-01" target="15" />
       <module name="MyBatis-02" target="15" />

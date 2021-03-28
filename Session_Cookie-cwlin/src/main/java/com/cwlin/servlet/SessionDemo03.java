@@ -1,23 +1,21 @@
 package com.cwlin.servlet;
 
 import jakarta.servlet.ServletException;
-import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
 
 import java.io.IOException;
 
-//删除Cookie
-public class CookieDemo02 extends HttpServlet {
+//手动注销Session
+public class SessionDemo03 extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        //创建一个cookie，名字必须要和待删除的cookie相同
-        Cookie cookie = new Cookie("lastLoginTime", System.currentTimeMillis()+"");
-        //设置cookie的有效期为0
-        cookie.setMaxAge(0);
-        //给客户端响应一个cookie
-        resp.addCookie(cookie);
+        HttpSession session = req.getSession();
+        session.removeAttribute("name");
+        //手动注销Session
+        session.invalidate();
     }
 
     @Override

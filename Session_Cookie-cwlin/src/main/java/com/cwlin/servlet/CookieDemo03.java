@@ -8,13 +8,13 @@ import jakarta.servlet.http.HttpServletResponse;
 
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.Date;
+import java.net.URLDecoder;
+import java.net.URLEncoder;
 
 //保存用户上次访问的时间
-public class CookieDemo01 extends HttpServlet {
+public class CookieDemo03 extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        //服务器告诉你你来的时间，把这个时间封装成一个信件，你下次带来，我就知道你来了
         //解决中文乱码问题
         req.setCharacterEncoding("utf-8");
         resp.setContentType("text/html");
@@ -25,21 +25,17 @@ public class CookieDemo01 extends HttpServlet {
         PrintWriter out = resp.getWriter();
         //判断Cookie是否存在
         if (cookies != null) { //存在
-            out.write("您上一次访问的时间是：");
             for (Cookie cookie : cookies) {
                 //获取Cookie的名字
-                if (cookie.getName().equals("lastLoginTime")) {
-                    long lastLoginTime = Long.parseLong(cookie.getValue());
-                    Date date = new Date(lastLoginTime);
-                    out.write(date.toLocaleString());
+                if (cookie.getName().equals("name")) {
+                    //System.out.println(cookie.getValue());
+                    out.write(URLDecoder.decode(cookie.getValue(),"UTF-8")); //解码
                 }
             }
         } else { //不存在
             out.write("这是您第一次访问本站");
         }
-        //服务器给客户端响应一个Cookie
-        Cookie cookie = new Cookie("lastLoginTime", System.currentTimeMillis()+"");
-        cookie.setMaxAge(24*60*60);
+        Cookie cookie = new Cookie("name", URLEncoder.encode("码农","utf-8")); //编码
         resp.addCookie(cookie);
     }
 

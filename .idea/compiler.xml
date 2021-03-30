@@ -22,11 +22,14 @@
         <module name="response" />
         <module name="Session_Cookie-cwlin" />
         <module name="MyBatis-05" />
+        <module name="Filter-cwlin" />
         <module name="Maven-cwlin" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="Cookie_Session-cwlin" target="1.5" />
+      <module name="Filter" target="15" />
+      <module name="Filter-cwlin" target="15" />
       <module name="JSP-cwlin" target="15" />
       <module name="Maven-cwlin" target="1.7" />
       <module name="MyBatis-01" target="15" />

@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="Filter-cwlin:war">
+    <output-path>$PROJECT_DIR$/out/artifacts/Filter_cwlin_war</output-path>
+    <root id="archive" name="Filter-cwlin_war.war">
+      <element id="artifact" artifact-name="Filter-cwlin:war exploded" />
+    </root>
+  </artifact>
+</component>

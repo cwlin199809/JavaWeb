@@ -1,8 +1,8 @@
 package com.cwlin.listener;
 
-import javax.servlet.ServletContext;
-import javax.servlet.http.HttpSessionEvent;
-import javax.servlet.http.HttpSessionListener;
+import jakarta.servlet.ServletContext;
+import jakarta.servlet.http.HttpSessionEvent;
+import jakarta.servlet.http.HttpSessionListener;
 
 //统计网站在线人数，即统计Session
 public class OnlineCountListener implements HttpSessionListener {
